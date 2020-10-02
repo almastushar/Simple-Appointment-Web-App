@@ -17,7 +17,7 @@
               <thead>
                 <th>#</th>
                 <th>Name</th>
-                <th>**</th>
+                <th>Actions</th>
               </thead>
               <tbody>
                 <?php
@@ -27,6 +27,7 @@
                     $ContactListID = $Row["ContactListID"];
                     $NextBDDT = $Row["NextBDDT"];
                     $NextStep = $Row["NextStep"];
+                    $Query = $Row["Note"];
                     $Type = "N";
                     $Name = Info($DBCON, $ContactListID, $Type);
                     $Type = "PN";
@@ -37,6 +38,7 @@
                             <p>$Name</p>
                             <p class='btn btn-info'>$NextStep</p>
                             <p class='btn btn-warning'>$NextBDDT</p>
+                            <p class='btn btn-success'>$Query</p>
                           </td>";
                     echo "<td>
                             <a href='tel:$PhoneNumber' class='btn btn-danger btn-block'><i class='zmdi zmdi-phone'></i></a>

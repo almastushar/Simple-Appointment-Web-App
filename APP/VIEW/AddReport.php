@@ -103,7 +103,7 @@
         $UQX = mysqli_query($DBCON, "UPDATE callloglist SET NextStepStatus = '1' WHERE ContactListID = '$ContactListID' AND CallLogListID != '$CallLogListID'");
 
         if ($NextStep == "Closed") {
-          $UQ = mysqli_query($DBCON, "UPDATE contactlist SET Closed = '1' WHERE ContactListID = '$ContactListID'");
+          $UQ = mysqli_query($DBCON, "UPDATE contactlist SET Closed = '1' AND Existence = '0' WHERE ContactListID = '$ContactListID'");
         }
 
         if ($R == "C") {

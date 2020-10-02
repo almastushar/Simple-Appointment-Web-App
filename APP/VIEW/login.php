@@ -1,5 +1,5 @@
       <?php 
-        include(APP_ROOT.'/APP/VIEW/LoggedOut.php');
+        //include(APP_ROOT.'/APP/VIEW/LoggedOut.php');
         include(APP_ROOT.'/APP/VIEW/Head.php');
       ?>
       <!-- BODY CONTENT STARTS -->
