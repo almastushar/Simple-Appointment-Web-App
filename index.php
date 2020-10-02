@@ -32,6 +32,9 @@
 			elseif ($p == "AddReport"){
 				include(APP_ROOT.'/APP/VIEW/AddReport.php');
 			}
+			elseif ($p == "logout"){
+				include(APP_ROOT.'/APP/VIEW/LoggedOut.php');
+			}
 			else{
 
 			}

@@ -11,7 +11,7 @@
 			$UserType = $Row["UserType"];
 			setcookie("UserID", $UserID, time() + (86400 * 365));
 			setcookie("UserType", $UserType, time() + (86400 * 365));
-			header("Location: Contacts.php");
+			header("Location: $Contacts");
 		}
 		else{
 			header("Location: index.php?ERR=1");

@@ -1,5 +1,5 @@
 <?php
-	$Site = "http://localhost/cbc";
+	$Site = "http://localhost/Appointments";
 	$AddNumber = "$Site/index.php?p=AddNumber";
 	$Contacts = "$Site/index.php?p=Contacts";
 	$ToCall = "$Site/index.php?p=ToCall";
@@ -7,6 +7,7 @@
 	$AddReport = "$Site/index.php?p=AddReport";
 	$Login = "$Site/index.php?p=login";
 	$ActionLogin = "$Site/index.php?p=ActionLogin";
+	$Logout = "$Site/index.php?p=logout";
 
 
 	$PUBLICDIR = "$Site/PUBLIC";

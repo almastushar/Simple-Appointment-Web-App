@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 27, 2019 at 02:17 PM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.1
+-- Generation Time: Oct 02, 2020 at 07:39 PM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.2.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `cbc`
+-- Database: `appointment`
 --
 
 -- --------------------------------------------------------
@@ -40,15 +39,6 @@ CREATE TABLE `callloglist` (
   `NextStepStatus` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `callloglist`
---
-
-INSERT INTO `callloglist` (`CallLogListID`, `ContactListID`, `CallLogType`, `NextStep`, `Note`, `NextBDDT`, `CallBDDT`, `UserID`, `NextStepStatus`) VALUES
-(1, 3, 'Call Dropped', 'Office Visit', 'Bingo', '2018-09-30 00:00:00', '2018-09-28 17:04:27', 1, 1),
-(2, 6, 'Picked', 'Office Visit', 'Will come tomorrow!', '2018-09-29 00:00:00', '2018-09-28 18:53:50', 1, 0),
-(3, 3, 'Call Dropped', 'Closed', '', '0000-00-00 00:00:00', '2018-09-28 18:57:32', 1, 0);
-
 -- --------------------------------------------------------
 
 --
@@ -65,18 +55,6 @@ CREATE TABLE `contactlist` (
   `UserID` int(11) NOT NULL,
   `BDDT` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `contactlist`
---
-
-INSERT INTO `contactlist` (`ContactListID`, `Name`, `PhoneNumber`, `PrimaryQuery`, `Closed`, `Existence`, `UserID`, `BDDT`) VALUES
-(1, 'Tamim', '01700000000', 'Personal', 0, 1, 3, '2018-09-28 15:26:43'),
-(2, 'Shakib', '01680000000', 'Others', 0, 1, 3, '2018-09-28 15:52:31'),
-(3, 'Fahad', '01520000000', 'Official', 1, 1, 3, '2018-09-28 15:54:07'),
-(4, 'Rased', '01970000000', 'Personal', 0, 1, 1, '2018-09-28 17:06:34'),
-(5, 'Mashrafi', '01830000000', 'Emergency', 0, 1, 1, '2018-09-28 18:51:20'),
-(6, 'Ding Dong', '880123456789', 'Others', 0, 1, 1, '2018-09-28 18:53:19');
 
 -- --------------------------------------------------------
 
@@ -98,7 +76,9 @@ CREATE TABLE `userlist` (
 
 INSERT INTO `userlist` (`UserID`, `UserName`, `Password`, `UserType`, `Existence`) VALUES
 (1, 'Almas', '1865a6728540cf99c56127f798fdd62e', '1', 1),
-(2, 'Tushar', '1865a6728540cf99c56127f798fdd62e', '2', 1);
+(2, 'Tushar', '1865a6728540cf99c56127f798fdd62e', '2', 1),
+(3, 'danialmas', '1865a6728540cf99c56127f798fdd62e', '1', 1),
+(4, 'sumaiya', '25d55ad283aa400af464c76d713c07ad', '1', 1);
 
 --
 -- Indexes for dumped tables
@@ -130,19 +110,19 @@ ALTER TABLE `userlist`
 -- AUTO_INCREMENT for table `callloglist`
 --
 ALTER TABLE `callloglist`
-  MODIFY `CallLogListID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `CallLogListID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `contactlist`
 --
 ALTER TABLE `contactlist`
-  MODIFY `ContactListID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ContactListID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `userlist`
 --
 ALTER TABLE `userlist`
-  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -29,11 +29,11 @@
             <i class="zmdi zmdi-account-add"></i>
             </a>
           </li>
-          <!-- <li class="dropdown top-nav__notifications">
-            <a href="">
-            <i class="zmdi zmdi-calendar-note"></i>
+          <li class="dropdown top-nav__notifications">
+            <a href="<?php echo $Logout; ?>">
+            <i class="zmdi zmdi-sign-in"></i>
             </a>
-          </li> -->
+          </li> 
         </ul>
       </header>
       <!-- HEADER MENU ENDS -->
