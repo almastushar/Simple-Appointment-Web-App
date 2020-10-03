@@ -8,16 +8,16 @@
       <section class="content content--full">
         <div class="content__inner">
           <header class="content__title">
-            <h1>CONTACTS</h1>
+            <h1 style='font-family: montserrat;'>CONTACT LIST</h1>
           </header>
         </div>
         <div class="card">
           <div class="card-body">
             <table class="table table-striped mb-0">
               <thead>
-                <th>#</th>
+                <th>SL</th>
                 <th>Name</th>
-                <th>**</th>
+                <th>Actions</th>
               </thead>
               <tbody>
                 <?php
@@ -31,8 +31,8 @@
                     echo "<tr>";
                     echo "<td>$Counter</td>";
                     echo "<td>
-                            <p>$Name</p>
-                            <p class='btn btn-info'>$PrimaryQuery</p>
+                            <p style='font-family: montserrat;'>$Name</p>
+                            <p class='btn btn-info'style='font-family: montserrat;'>$PrimaryQuery</p>
                           </td>";
                     echo "<td>
                             <a href='tel:$Number' class='btn btn-danger btn-block'><i class='zmdi zmdi-phone'></i></a>

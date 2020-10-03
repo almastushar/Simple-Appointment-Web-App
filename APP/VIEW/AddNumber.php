@@ -7,7 +7,7 @@
       <section class="content content--full">
         <div class="content__inner">
           <header class="content__title">
-            <h1>ADD NEW NUMBER</h1>
+            <h1 style='font-family: montserrat;'>ADD NEW NUMBER</h1>
           </header>
         </div>
         <div class="card">

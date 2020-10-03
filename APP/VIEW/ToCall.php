@@ -8,14 +8,14 @@
       <section class="content content--full">
         <div class="content__inner">
           <header class="content__title">
-            <h1>CONTACTS</h1>
+            <h1 style='font-family: montserrat;'>AFTER QUERY</h1>
           </header>
         </div>
         <div class="card">
           <div class="card-body">
             <table class="table table-striped mb-0">
               <thead>
-                <th>#</th>
+                <th>SL</th>
                 <th>Name</th>
                 <th>Actions</th>
               </thead>
@@ -35,10 +35,35 @@
                     echo "<tr>";
                     echo "<td>$Counter</td>";
                     echo "<td>
-                            <p>$Name</p>
-                            <p class='btn btn-info'>$NextStep</p>
-                            <p class='btn btn-warning'>$NextBDDT</p>
-                            <p class='btn btn-success'>$Query</p>
+                              <div class='email' onclick=\"this.classList.add('expand')\">
+                                <div class='from'>
+                                  <div class='from-contents'>
+                                    <div class='name' style='font-family: montserrat;'>$Name</div>
+                                  </div>
+                                </div>
+                                <div class='to'>
+                                  <div class='to-contents'>
+                                    <div class='top'>
+                                      <div class='name-large'>$Name</div>
+                                      <div class='x-touch' onclick=\"document.querySelector('.email.expand').classList.remove('expand');event.stopPropagation();\">
+                                        <div class='x'>
+                                          <div class='line1'></div>
+                                          <div class='line2'></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class='bottom'>
+                                      <div style='float:left;'>
+                                        <div class='link'><p class='btn btn-info' style='font-family: montserrat;'>$NextStep</p></div>
+                                        <div class='link'><p class='btn btn-warning' style='font-family: montserrat;'>$NextBDDT</p></div>
+                                      </div>
+                                      <div style='float:right;'>
+                                        <div class='link'><p class='btn btn-success' style='font-family: montserrat;'>$Query</p></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                           </td>";
                     echo "<td>
                             <a href='tel:$PhoneNumber' class='btn btn-danger btn-block'><i class='zmdi zmdi-phone'></i></a>

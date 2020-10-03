@@ -1,5 +1,5 @@
 <?php
-	$Site = "https://almashossain.com";
+	$Site = "http://localhost/Appointments";
 	$AddNumber = "$Site/index.php?p=AddNumber";
 	$Contacts = "$Site/index.php?p=Contacts";
 	$ToCall = "$Site/index.php?p=ToCall";

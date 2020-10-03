@@ -4,6 +4,7 @@
 		setcookie("UserID", "", time() - 3600);
 		setcookie("UserType", "", time() - 3600);
 		session_destroy();
+
 		header("Location: $Login");
 	}
 

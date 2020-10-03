@@ -12,5 +12,5 @@
     <!-- App styles -->
     <link rel="stylesheet" href="<?php echo $PUBLICDIR ?>/css/app.min.css">
     <!-- Demo -->
-    <link rel="stylesheet" href="<?php echo $PUBLICDIR ?>/demo/css/demo.css">
+    <link rel="stylesheet" href="<?php echo $PUBLICDIR ?>/css/pop.css">
   </head>

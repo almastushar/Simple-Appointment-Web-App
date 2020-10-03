@@ -21,7 +21,7 @@
       <section class="content content--full">
         <div class="content__inner">
           <header class="content__title">
-            <h1>RECORD CALL REPORT</h1>
+            <h1 style='font-family: montserrat;'>RECORD CALL REPORT</h1>
           </header>
         </div>
         <div class="card">
@@ -103,7 +103,7 @@
         $UQX = mysqli_query($DBCON, "UPDATE callloglist SET NextStepStatus = '1' WHERE ContactListID = '$ContactListID' AND CallLogListID != '$CallLogListID'");
 
         if ($NextStep == "Closed") {
-          $UQ = mysqli_query($DBCON, "UPDATE contactlist SET Closed = '1' AND Existence = '0' WHERE ContactListID = '$ContactListID'");
+          $UQ = mysqli_query($DBCON, "UPDATE contactlist SET Closed = '1', Existence = '0' WHERE ContactListID = '$ContactListID'");
         }
 
         if ($R == "C") {

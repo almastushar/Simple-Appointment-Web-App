@@ -5,7 +5,7 @@
       <!-- BODY CONTENT STARTS -->
       <section class="content content--full">
         <div class="card">
-          <div class="card-header">
+          <div class="card-header" style='font-family: montserrat;'>
             LOGIN NOW
           </div>
           <div class="card-body">
